@@ -22,8 +22,36 @@ body, html, p, h1, h2, h3, h4, h5, p, span, ul, li, a, img, section, main, div, 
   display: flex;
 }
 
+.navigation {
+  width: 50%;
+}
+
+.navigationList {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .navItem {
   color: #fff;
+  cursor: pointer;
+  border: 1px solid;
+  padding: 5px;
+
+  --c: #0700fd;
+
+  background:
+          linear-gradient(90deg,#fff 50%,var(--c) 0) calc(100% - var(--_p,0%))/200% 100%,
+          linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) 100% no-repeat;
+  -webkit-background-clip: text,padding-box;
+  background-clip: text,padding-box;
+  transition: 0.5s;
+}
+
+.navItem:hover {
+  --_p: 100%
 }
 
 .headerImage {
@@ -36,4 +64,55 @@ body, html, p, h1, h2, h3, h4, h5, p, span, ul, li, a, img, section, main, div, 
 
 .layout {
   max-width: 1650px;
+}
+
+.main {
+  padding: 20px 40px;
+}
+
+.itemsList {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+}
+
+.shopItem {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  height: 370px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #ece9e9;
+  border-radius: 4px;
+}
+
+.imageBackground {
+  background-color: white;
+  width: calc(300px - 20px);
+  height: 280px;
+}
+
+.cardImage {
+  max-width: 280px;
+  max-height: 280px;
+}
+
+.cardTitle {
+  padding-top: 10px;
+}
+
+.cardPrice {
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: auto;
+  text-align: right;
+}
+
+@media (max-width: 500px) {
+  .itemsList {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
 }

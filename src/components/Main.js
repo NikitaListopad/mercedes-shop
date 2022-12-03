@@ -2,7 +2,7 @@
 export const Main = ({children}) => {
 
     return (
-        <main>
+        <main className='main'>
             {children}
         </main>
     )

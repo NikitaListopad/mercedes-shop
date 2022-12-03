@@ -5,7 +5,7 @@ import {ItemsList} from "./components/ItemsList";
 
 function App() {
   return (
-    <div className="App">
+    <div>
     <Layout>
         <Header />
         <Main>
