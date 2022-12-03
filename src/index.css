@@ -1,0 +1,39 @@
+/*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',*/
+/*'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',*/
+/*sans-serif;*/
+
+/*font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',*/
+/*monospace;*/
+
+body, html, p, h1, h2, h3, h4, h5, p, span, ul, li, a, img, section, main, div, header, button, form, input {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #000000;
+}
+
+.headerTop {
+  display: flex;
+}
+
+.navItem {
+  color: #fff;
+}
+
+.headerImage {
+  height: 475px;
+}
+
+.headerImage > img {
+  width: 100%;
+}
+
+.layout {
+  max-width: 1650px;
+}
