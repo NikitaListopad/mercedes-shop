@@ -31,7 +31,8 @@ body, html, p, h1, h2, h3, h4, h5, p, span, ul, li, a, img, section, main, div, 
   display: flex;
   height: 100%;
   flex-direction: row;
-  justify-content: space-around;
+  gap: 3rem;
+  justify-content: end;
 }
 
 .navItem {
@@ -81,7 +82,7 @@ body, html, p, h1, h2, h3, h4, h5, p, span, ul, li, a, img, section, main, div, 
   display: flex;
   flex-direction: column;
   max-width: 300px;
-  height: 370px;
+  min-height: 370px;
   margin: 0 auto;
   padding: 10px;
   background-color: #ece9e9;
@@ -103,10 +104,30 @@ body, html, p, h1, h2, h3, h4, h5, p, span, ul, li, a, img, section, main, div, 
   padding-top: 10px;
 }
 
+.cardAbout {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  align-items: center;
+}
+
+.aboutButton {
+  border-radius: 2px;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 20px;
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+
+.aboutButton:hover {
+  background-color: rgba(169, 169, 169, 0.42);
+}
+
 .cardPrice {
   font-size: 18px;
   line-height: 24px;
-  margin-top: auto;
   text-align: right;
 }
 

@@ -8,7 +8,12 @@ const ItemCard = ({item}) => {
                 <img src={item.photo} alt={item.title} className='cardImage'/>
             </div>
             <h4 className='cardTitle'>{item.title}</h4>
-            <span className='cardPrice'>{item.price}</span>
+            <div className='cardAbout'>
+                <span className='cardPrice'>{item.price}</span>
+                <button className='aboutButton'>
+                    О товаре
+                </button>
+            </div>
         </li>
     )
 }
